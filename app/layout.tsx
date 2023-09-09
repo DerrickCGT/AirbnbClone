@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import Navbar from './components/navbar/Navbar'
 
-const inter = Nunito({ subsets: ['latin'] })
+const font = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Airbnb',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <Navbar />
         {children}
         </body>
