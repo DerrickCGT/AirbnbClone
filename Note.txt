@@ -1,0 +1,15 @@
+Day 2:
+	under layout
+		add navbar and child
+
+	under navbar
+		create container
+			add logo, search and usermenu in the container
+		under search
+			add three component "anywhere, any week and add guest" then search icon next to it
+		under usermenu
+			create MenuItem (similar to dropdown), add avatar logo, 
+				under MenuItem -> onClick and Label -> Add Login and Signup 
+					
+				
+		
