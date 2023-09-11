@@ -10,6 +10,8 @@ Day 2:
 		under usermenu
 			create MenuItem (similar to dropdown), add avatar logo, 
 				under MenuItem -> onClick and Label -> Add Login and Signup 
+	under ClientOnly
+		due to hydration issue, ClientOnly is used to wrap the navbar under layout to prevent hydration
 					
 				
 		
