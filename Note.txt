@@ -19,6 +19,7 @@ npm install react-icons
 	Under component create Modals.tsx
 		crate actions and Button.tsx
 
-					
+Day 4: 
+	under components create useRegisterModal.ts
 				
 		
