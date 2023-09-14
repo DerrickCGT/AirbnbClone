@@ -31,3 +31,4 @@ npm install react-hook-form
 npm install react-hot-toast
 	under apps create ToasterProvider.tsx
 	Add footer button to register modal and add {footer} to modal 
+	Complete registerModal and all component
