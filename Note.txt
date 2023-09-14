@@ -20,6 +20,7 @@ npm install react-icons
 
 Day 4: 
 npm install zustand
+npm install axios
 	under components create useRegisterModal.ts
 				
 		
