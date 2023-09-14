@@ -14,12 +14,12 @@ Day 2:
 		due to hydration issue, ClientOnly is used to wrap the navbar under layout to prevent hydration
 
 Day 3: 
-npm install zustand
 npm install react-icons
 	Under component create Modals.tsx
 		crate actions and Button.tsx
 
 Day 4: 
+npm install zustand
 	under components create useRegisterModal.ts
 				
 		
