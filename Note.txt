@@ -26,4 +26,5 @@ npm install react-hook-form
 	under registerModal create Hook using zustand
 		then create Heading.tsx and Input.tsx
 npm install react-hot-toast
-		
+	under components create Input.tsx
+		use for input box
