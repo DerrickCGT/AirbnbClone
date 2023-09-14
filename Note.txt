@@ -24,6 +24,7 @@ npm install axios
 npm install react-hook-form
 	under components create useRegisterModal.ts
 	under registerModal create Hook using zustand
+		registerModal is used to wrap Modal as registration form
 		then create Heading.tsx and Input.tsx
 	under components create Input.tsx
 		use for input box
