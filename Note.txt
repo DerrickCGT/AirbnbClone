@@ -21,6 +21,7 @@ npm install react-icons
 Day 4: 
 npm install zustand
 npm install axios
+npm install react-hook-form
 	under components create useRegisterModal.ts
 				
 		
