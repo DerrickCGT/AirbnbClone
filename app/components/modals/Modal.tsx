@@ -28,7 +28,7 @@ const Modal: React.FC<ModalProps> = ({
 	actionLabel,
 	disabled,
 	secondaryAction,
-  secondaryActionLabel
+  	secondaryActionLabel
 }) => {
 	const [ showModal, setShowModal] = useState(isOpen);
 
