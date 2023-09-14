@@ -12,6 +12,19 @@ Day 2:
 				under MenuItem -> onClick and Label -> Add Login and Signup 
 	under ClientOnly
 		due to hydration issue, ClientOnly is used to wrap the navbar under layout to prevent hydration
-					
-				
-		
+
+Day 3: 
+npm install react-icons
+	Under component create Modals.tsx
+		crate actions and Button.tsx
+
+Day 4: 
+npm install zustand
+npm install axios
+npm install react-hook-form
+	under components create useRegisterModal.ts
+	under registerModal create Hook using zustand
+		then create Heading.tsx and Input.tsx
+npm install react-hot-toast
+	under components create Input.tsx
+		use for input box
