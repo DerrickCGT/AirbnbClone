@@ -45,7 +45,8 @@ npx prisma db push
 npm install next-auth @prisma/client @next-auth/prisma-adapter
 npm install bcrypt
 npm install -D @types/bcrypt
-	under app/libs create prismadb.ts (to ensure hot reloading of next.js. allow one instances of prismaCLient created)
+	under app/libs create prismadb.ts (to ensure hot reloading of next.js. allow one 			instances of prismaCLient created)
 	under pages/api/auth create [...nextauth].js for authetication component
+	under app/api/register create route.ts 
 		
 
