@@ -32,3 +32,16 @@ npm install react-hot-toast
 	under apps create ToasterProvider.tsx
 	Add footer button to register modal and add {footer} to modal 
 	Complete registerModal and all component
+	
+Day 5: Setup registration database and components
+install prisma and mongoDB
+npm install -D prisma
+npx prisma init
+	edit prisma schema and add all model required "User", "Account", "Listing"
+npx prisma db push
+	Push the db collection to mongodb via prisma
+		*set mongoDB Ip whitelist to be 0.0.0.0/0 for production mode to allowist all IP
+		*ensure the network connection is not blocked such as public wifi
+npm install next-auth @prisma/client @next-auth/prisma-adapter
+
+
