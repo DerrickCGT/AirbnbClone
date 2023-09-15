@@ -119,7 +119,6 @@ const RegisterModal = () => {
           </div>
         </div>        
       </div>
-     
     </div>
   )
 
