@@ -32,6 +32,7 @@ npm install react-hot-toast
 	under apps create ToasterProvider.tsx
 	Add footer button to register modal and add {footer} to modal 
 	Complete registerModal and all component
+SUMMARY: ***Modal.tsx is the UI of Registration form and RegisterModal.tsx is the script for interaction including onSubmit, BodyContent, FooterContent, onClose
 	
 Day 5: Setup registration database and components
 install prisma and mongoDB
@@ -48,5 +49,7 @@ npm install -D @types/bcrypt
 	under app/libs create prismadb.ts (to ensure hot reloading of next.js. allow one 			instances of prismaCLient created)
 	under pages/api/auth create [...nextauth].js for authetication component
 	under app/api/register create route.ts 
+SUMMARY: 	***prismadb is create instance of db and prevent hotloading***
+QUESTION: how does "continue" button able to send instruction to create object user in db
 		
 
