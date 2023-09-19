@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import Button from "../Button";
 
+// Type definition for the modal's props
 interface ModalProps {
 	isOpen?: boolean;
 	onClose: () => void;
@@ -18,6 +19,7 @@ interface ModalProps {
 
 }
 
+// The main Modal component
 const Modal: React.FC<ModalProps> = ({
 	isOpen,
 	onClose,
@@ -30,12 +32,15 @@ const Modal: React.FC<ModalProps> = ({
 	secondaryAction,
   	secondaryActionLabel
 }) => {
+	// State to control whether to show the modal or not
 	const [ showModal, setShowModal] = useState(isOpen);
 
+	// When the isOpen prop changes, update the showModal state
 	useEffect(() => {
 		setShowModal(isOpen);
 	}, [isOpen])
 
+	// Handler for closing the modal
 	const handleClose = useCallback(
 		() => {
 			if (disabled){
@@ -50,6 +55,7 @@ const Modal: React.FC<ModalProps> = ({
 		[disabled, onClose],
 	);
 	
+	// Handler for submitting the modal's form/data
 	const handleSubmit = useCallback(
 		() => {
 			if (disabled) {
@@ -60,6 +66,7 @@ const Modal: React.FC<ModalProps> = ({
 		[disabled, onSubmit],
 	);
 
+	// Handler for the secondary action in the modal (like a secondary button)
 	const handleSecondaryAction = useCallback(
 		() => {
 			if (disabled || !secondaryAction){
@@ -70,11 +77,12 @@ const Modal: React.FC<ModalProps> = ({
 		[disabled, secondaryAction],
 	)
 	
+	// If the modal is not open, render nothing
 	if (!isOpen){
 		return null;
 	}
 	
-
+	// Render the modal
   return (
     <>
 			<div
@@ -175,6 +183,7 @@ const Modal: React.FC<ModalProps> = ({
 													onClick={handleSecondaryAction}												
 												/>
 											)}
+											{/* Main Modal Button, eg: sign up */}
 											<Button  
 												disabled={disabled}
 												label={actionLabel}
