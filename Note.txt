@@ -59,6 +59,8 @@ Day 6: Login functionality
 		getCurrentUser instance is pass to Navbar then to UserMenu
 			when getCurrentUser instance is true, the UserMenu will changed different view ["my trips", "my properties", "airbnb my home", "settings", "logout", etc...]
 			set logout button using signOut from next.auth/react
-	
+			hydration occurs as dateTime object is not able pass to client component from server component, thus fix it by changing it to string via .toISOString and create app/types/index.ts
+
+**next enables social logins**
 		
 
