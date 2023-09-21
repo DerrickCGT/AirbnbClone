@@ -50,6 +50,17 @@ npm install -D @types/bcrypt
 	under pages/api/auth create [...nextauth].js for authetication component
 	under app/api/register create route.ts 
 SUMMARY: 	***prismadb is create instance of db and prevent hotloading***
-QUESTION: how does "continue" button able to send instruction to create object user in db
+
+Day 6: Login functionality
+	Duplicate RegisterModal and UseRegisterModal to LoginModal and UseLoginModal
+		Edit submit function using signIn import from next-auth/react. Using Next13 authenticate with server componenet
+	Create getCurrentUser.ts to confirm the authentication on server side
+		pass it to layout.tsx(which is a server side, or it can directly call in layout without creating getCurrentUser.ts, but to make code nicer we separate)
+		getCurrentUser instance is pass to Navbar then to UserMenu
+			when getCurrentUser instance is true, the UserMenu will changed different view ["my trips", "my properties", "airbnb my home", "settings", "logout", etc...]
+			set logout button using signOut from next.auth/react
+			hydration occurs as dateTime object is not able pass to client component from server component, thus fix it by changing it to string via .toISOString and create app/types/index.ts
+
+**next enables social logins**
 		
 
