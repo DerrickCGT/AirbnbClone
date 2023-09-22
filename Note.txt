@@ -63,4 +63,13 @@ Day 6: Login functionality
 
 **next enables social logins**
 		
-
+Day 7: Social Login and Listing Functionality
+	Social Login via github or google
+		Go to github developer setting and google api to acquire OAuth ID and Secret and cast it to [...nextauth.js] via .env
+		update signIn to Github/Google button under RegisterModal and LoginModal
+		applied github/google avatar image as CurrentUser?.image and update Avatar.tsx and next.config.js for github/google routing
+	Listing Functionality
+		create Categories.tsx under navbar to create search icon based on category
+		create categorybox.tsx, a modal for categories 
+npm install query-string
+	
