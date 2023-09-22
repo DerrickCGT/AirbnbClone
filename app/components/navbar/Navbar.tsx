@@ -2,6 +2,7 @@
 
 
 import Container from "../Container";
+import Categories from "./Categories";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
@@ -34,17 +35,15 @@ const Navbar: React.FC<NavbarProps> = ({
                         md:gap-0
                         "
                     >
-                     <Logo />
-                      
+                     <Logo />                      
                      <Search />     
                      {/* SafeUser types applied to ensure serializable (refer to app/types/index.ts)
                      Serializable in react do not support 'date' object*/}
                      <UserMenu currentUser={currentUser}/>
-                    </div>
-                    
+                    </div>                    
                 </Container>
-
             </div>
+            <Categories />
         </div>
     );
 }
