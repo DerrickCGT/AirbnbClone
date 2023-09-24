@@ -73,3 +73,7 @@ Day 7: Social Login and Listing Functionality
 		create categorybox.tsx, a modal for categories 
 npm install query-string
 	
+Day 8: Listing Creation part 1
+	Create RentModal to opt users input their home for airbnb rent
+		create category input to allow user input their details of rent homes. Update click button on navbar to redirect RentModal
+		
