@@ -91,5 +91,5 @@ npm install leaflet
 npm install -D @types/leaflet
 npm install react-leaflet
 		Use world-countries for country selection
-		create Map.tsx to add world map plugin to Step2. Location on rent Modal.
+		create Map.tsx to add world map plugin to Step2. Location on rent Modal. Add Marker on location
 		
