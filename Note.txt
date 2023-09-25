@@ -74,6 +74,22 @@ Day 7: Social Login and Listing Functionality
 npm install query-string
 	
 Day 8: Listing Creation part 1
-	Create RentModal to opt users input their home for airbnb rent
+enum STEPS {
+  CATEGORY = 0,
+  LOCATION = 1,
+  INFO = 2,
+  IMAGES = 3,
+  DESCRIPTION = 4,
+  PRICE = 5
+}
+	Step 1. Create RentModal to opt users input their home for airbnb rent based on steps. First is category with multiple selection of button to select the category.
 		create category input to allow user input their details of rent homes. Update click button on navbar to redirect RentModal
+	step 2. Location (create useCountries.ts and CountrySelect.tsx)
+npm install world-countries
+npm install react-select
+npm install leaflet
+npm install -D @types/leaflet
+npm install react-leaflet
+		Use world-countries for country selection
+		create Map.tsx to add world map plugin to Step2. Location on rent Modal.
 		
