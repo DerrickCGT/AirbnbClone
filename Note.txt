@@ -91,5 +91,6 @@ npm install leaflet
 npm install -D @types/leaflet
 npm install react-leaflet
 		Use world-countries for country selection
-		create Map.tsx to add world map plugin to Step2. Location on rent Modal. Add Marker on location
-		
+		create Map.tsx to add world map plugin to Step2. Location on RentModal. Add Marker on location
+	Step 3. Info
+		Update RentModal for step 3 info. Create Counter.tsx to create an input for info of property, such as bathroomCount, roomCount, guestCount.
