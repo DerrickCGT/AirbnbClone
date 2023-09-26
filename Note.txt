@@ -100,3 +100,6 @@ Day 9: Listing creation part 2
 		create inputs/ImageUpload.tsx and using cloudinary as CDN
 npm install next-cloudinary
 		update env for cloudinary CloudName, upload preset (remember to unsigned), update next.config.js
+	Step 5. Description and Prices
+		update RentModal and create axios post onSubmit api/listings/route.ts
+		connect mongoDB via route.ts
