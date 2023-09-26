@@ -94,3 +94,9 @@ npm install react-leaflet
 		create Map.tsx to add world map plugin to Step2. Location on RentModal. Add Marker on location
 	Step 3. Info
 		Update RentModal for step 3 info. Create Counter.tsx to create an input for info of property, such as bathroomCount, roomCount, guestCount.
+
+Day 9: Listing creation part 2
+	Step 4. Images
+		create inputs/ImageUpload.tsx and using cloudinary as CDN
+npm install next-cloudinary
+		update env for cloudinary CloudName, upload preset (remember to unsigned), update next.config.js
