@@ -104,10 +104,13 @@ npm install next-cloudinary
 		update RentModal and create axios post onSubmit api/listings/route.ts
 		connect mongoDB via route.ts
 
-Day 10: featching listing with server component
+Day 10: fetching listing with server component
 	Update page, create emptyState.tsx and return home
 	Create getlisting.ts to retrieve listing from database (no api required as it was server side)
 	Once listings is retrieve, now we fix the UI by creating ListingCard to display all the listings
 	ListingCard.tsx will be a modal that is reuse throughout reservation, favourites, my properties
 npm install date-fns
 	method - reservationDate, create heartButton.tsx for favourite functionality
+
+Day 11: Listing Favourite functionality
+	Create api/[listingId]/route.ts to favorite listing 
