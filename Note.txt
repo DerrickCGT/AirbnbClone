@@ -114,3 +114,4 @@ npm install date-fns
 
 Day 11: Listing Favourite functionality
 	Create api/[listingId]/route.ts to favorite listing 
+	useFavourite.ts as a hook route to client side HeartButton 
