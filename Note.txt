@@ -115,3 +115,14 @@ npm install date-fns
 Day 11: Listing Favourite functionality
 	Create api/[listingId]/route.ts to favorite listing 
 	useFavourite.ts as a hook route to client side HeartButton 
+
+day 12: Individual Listing view
+	under ListingCard.tsx, we have route push onClick={() => router.push(`/listings/${data.id}`)} 
+	thus, page.tsx is created under /app/listings/[listingId] for individual listing page view
+	create action getListingById to page.tsx (server side database retrieve listing) then create ListingClient as Modal
+	ListingCient.tsx (create body content to ListingClient by components)
+	|- ListingHead.tsx (component display head of individual listing such as title/location/image with favorite)
+	|- ListingInfo.tsx (component display body of individual listing such as category, description, user , map)
+	   |-ListingCategory.tsx (component to display category such as icon, category description and label )
+	
+	
