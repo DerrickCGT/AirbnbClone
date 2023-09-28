@@ -8,7 +8,7 @@ interface IParams {
   listingId?: string;
 }
 
-// Remove default function 
+// Remove default function on route handler for API
 export async function POST(
   request: Request,
   { params }: {params: IParams}
