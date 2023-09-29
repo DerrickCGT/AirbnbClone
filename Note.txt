@@ -125,4 +125,11 @@ day 12: Individual Listing view
 	|- ListingInfo.tsx (component display body of individual listing such as category, description, user , map)
 	   |-ListingCategory.tsx (component to display category such as icon, category description and label )
 	
-	
+Day 13: Listing Reservation and Calendar
+npm install react-date-range
+npm install -D @types/react-date-range
+	create ListingReservation.tsx with Calendar.tsx for a calendar widget to user to select range of date
+	import Range from react-date-range for the date object
+	functionality to disabled past date and calculate in calendardate for prices 
+	create api/reservations/route.ts for API post the reservatation date to prismadb reservations
+	update globals.css for calendar widget using react-date-range css components
