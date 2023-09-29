@@ -136,4 +136,7 @@ npm install -D @types/react-date-range
 	create getReservation.ts to retrieve reservations from prismadb
 		update ListingClient, [listingId]/page.tsx, index.tsx for SafeListing type
 		it fetch reservations date to block out reserved date thus prevent duplicate date reserved
-		
+	Ensure the date format is "PP" instead of "pp"
+	update the onClick function for mytrip under Navbar/UserMenu
+	create trips/page.tsx and TripsClient for MyTrip Page to display all trips booked or reserved
+		allow user to delete reservation by hook router to DELETE reservation	
