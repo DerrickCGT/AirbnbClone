@@ -129,7 +129,11 @@ Day 13: Listing Reservation and Calendar
 npm install react-date-range
 npm install -D @types/react-date-range
 	create ListingReservation.tsx with Calendar.tsx for a calendar widget to user to select range of date
-	import Range from react-date-range for the date object
-	functionality to disabled past date and calculate in calendardate for prices 
-	create api/reservations/route.ts for API post the reservatation date to prismadb reservations
-	update globals.css for calendar widget using react-date-range css components
+		import Range from react-date-range for the date object
+		functionality to disabled past date and calculate in calendardate for prices 
+	create api/reservations/route.ts for API post the reservation date to prismadb reservations
+		update globals.css for calendar widget using react-date-range css components
+	create getReservation.ts to retrieve reservations from prismadb
+		update ListingClient, [listingId]/page.tsx, index.tsx for SafeListing type
+		it fetch reservations date to block out reserved date thus prevent duplicate date reserved
+		
