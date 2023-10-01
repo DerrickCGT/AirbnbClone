@@ -125,7 +125,7 @@ day 12: Individual Listing view
 	|- ListingInfo.tsx (component display body of individual listing such as category, description, user , map)
 	   |-ListingCategory.tsx (component to display category such as icon, category description and label )
 	
-Day 13: Listing Reservation and Calendar
+Day 13: Listing Reservation and Calendar (myTrip)
 npm install react-date-range
 npm install -D @types/react-date-range
 	create ListingReservation.tsx with Calendar.tsx for a calendar widget to user to select range of date
@@ -140,3 +140,9 @@ npm install -D @types/react-date-range
 	update the onClick function for mytrip under Navbar/UserMenu
 	create trips/page.tsx and TripsClient for MyTrip Page to display all trips booked or reserved
 		allow user to delete reservation by hook router to DELETE reservation	
+
+Day 14: Owner myReservation 
+	create app/reservation/page.tsx and ReservationClient.tsx for owner reservation page to view airbnb owner self resevation
+		allow owner to cancelled customer reservation, view all reservation by owner property
+	same as TripClient, using api/reservation/route.ts to DELETE reservation with hook to prismadb reservations
+	update userMenu click button for My Reservation
