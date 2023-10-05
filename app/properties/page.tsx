@@ -23,18 +23,22 @@ const PropertiesPage = async () => {
 
   if (listings.length === 0) {
     return(
-      <EmptyState 
-        title="No properties found"
-        subtitle="You have no properties."
-      />
+      <ClientOnly> 
+        <EmptyState 
+          title="No properties found"
+          subtitle="You have no properties."
+        />
+      </ClientOnly>
     )
   };
 
   return (
-    <PropertiesClient 
-      listings={listings}
-      currentUser={currentUser}
-    />
+    <ClientOnly>
+      <PropertiesClient 
+        listings={listings}
+        currentUser={currentUser}
+      />
+    </ClientOnly>
   )
 }
 

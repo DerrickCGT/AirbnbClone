@@ -10,10 +10,12 @@ const ReservationPage = async () => {
 
   if (!currentUser) {
     return (
-      <EmptyState 
-        title="Unauthorized"
-        subtitle="Please Login"      
-      />
+      <ClientOnly>
+        <EmptyState 
+          title="Unauthorized"
+          subtitle="Please Login"      
+        />
+      </ClientOnly>
     )
   }
 
@@ -23,18 +25,22 @@ const ReservationPage = async () => {
 
   if (reservations.length === 0) {
     return (
-      <EmptyState
-        title="No reservations found"
-        subtitle="Looks like you have no reservations on your property."
-      />
+      <ClientOnly>
+        <EmptyState
+          title="No reservations found"
+          subtitle="Looks like you have no reservations on your property."
+        />
+      </ClientOnly>
     )
   }
 
   return (
-    <ReservationClient 
-      reservations={reservations}
-      currentUser={currentUser}
-    />
+    <ClientOnly>
+      <ReservationClient 
+        reservations={reservations}
+        currentUser={currentUser}
+      />
+    </ClientOnly>
   )
 
 };

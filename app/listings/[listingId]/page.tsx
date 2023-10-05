@@ -16,18 +16,20 @@ const ListingPage = async ({ params }: { params: IParams }) => {
 
 	if (!listing) {
 		return (
-			<EmptyState />
+			<ClientOnly>
+				<EmptyState />
+			</ClientOnly>
 		)
 	}
 
   return (
-    <div>
-      <ListingClient 
+		<ClientOnly>			
+			<ListingClient 
 				listing={listing}
 				reservations={reservations}
 				currentUser={currentUser}
-			/>
-    </div>
+			/>			
+		</ClientOnly>
   )
 }
 
