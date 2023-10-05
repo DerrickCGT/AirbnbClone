@@ -168,3 +168,6 @@ Day 16: Implement Search functionality
 npm install react-spinners
 	create app/loading.tsx and app/components/Loader.tsx to import react-spinner for PuffLoader effect
 	include PuffLoader icon while page under loading status
+
+	Implement error.tsx
+	create app/error.tsx to show error page
