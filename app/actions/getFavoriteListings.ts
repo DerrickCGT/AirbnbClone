@@ -7,7 +7,7 @@ export default async function getFavoriteListings() {
 		const currentUser = await getCurrentUser();
 
 		if (!currentUser) {
-			return [];
+			throw new Error('Unauthorized');			
 		}
 
 		const favorites = await prisma.listing.findMany({
