@@ -69,9 +69,7 @@ For convenience, here are some of the primary npm scripts you can run:
 |  Command	      |Description                                |
 | :-------------- | :---------------------------------------- |
 |  dev	          |Starts the application in development mode |
-| :-------------- | :---------------------------------------- |
 |  build          |Builds the application for production      |
-| :-------------- | :---------------------------------------- |
 |  start          |Starts the production server               |
 
 🤝 Contributing
