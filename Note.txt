@@ -146,3 +146,12 @@ Day 14: Owner myReservation
 		allow owner to cancelled customer reservation, view all reservation by owner property
 	same as TripClient, using api/reservation/route.ts to DELETE reservation with hook to prismadb reservations
 	update userMenu click button for My Reservation
+
+Day 15: Update favoriteListings and PropertyListings
+	update userMenu button click
+	create app/favorites/FavoritesClient.tsx & page.tsx to display favorited listings by users
+	create action/getFavoriteListings.ts for client to fetch favorited listings
+	create app/properties/PropertiesClient.tsx & page.tsx to display properties that was hosted by users
+	update action/getListings.ts to pass in userId to fetch listings hosted by users, 
+	then update app/page.tsx to pass in searchParams object to ensure the getListing update work properly
+	create app/listings/[listingId]/route.ts for DELETE listings from user hosted listings under prismadb listing where userId = currentUser.Id
