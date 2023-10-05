@@ -164,3 +164,7 @@ Day 16: Implement Search functionality
 	update action/getListings.ts to include query parameters for all assigned filters (initially it get all listings and later updated for fetch listings hosted by users)
 	Filters include Location (map), dateRange (calendar) and parameters(guestCount, roomCount, bathroomCount)
 	
+	Implement loading.tsx
+npm install react-spinners
+	create app/loading.tsx and app/components/Loader.tsx to import react-spinner for PuffLoader effect
+	include PuffLoader icon while page under loading status
