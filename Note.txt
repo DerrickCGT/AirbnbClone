@@ -171,3 +171,7 @@ npm install react-spinners
 
 	Implement error.tsx
 	create app/error.tsx to show error page
+
+	update search.tsx to show parameter and filters on the search bathroomCount
+
+	Implement middleware.ts on rootfiles to prevent users to get into the URL directly
