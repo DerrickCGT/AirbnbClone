@@ -1,15 +1,12 @@
-# Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth 2023
+# Full Stack Airbnb Clone with Next.js 13
+## React, Tailwind, Prisma, MongoDB, NextAuth
 
-
-Airbnb Clone with Next.js
 This repository houses a comprehensive clone of Airbnb built with Next.js, showcasing advanced features such as authentication, property management, and advanced search functionalities.
 
-Screenshot of the App
+[Screenshot]
 
-🎥 Demo
-Link to Video Tutorial/Demo
 
-🌟 Features
+### 🌟 Features
 Design & Responsiveness: Leveraging Tailwind CSS for modern UI components and responsiveness.
 Authentication: Supports email/password, Google, and GitHub authentication using NextAuth.
 Image Handling: Utilizes Cloudinary CDN for efficient image uploads and rendering.
@@ -24,30 +21,28 @@ Shareable Filters: Generate URLs with applied filters to share listings view.
 Direct Database Fetch: Fetch data in server components without traditional API endpoints.
 New Next.js Features: Implements new Next.js 13 features like error.tsx, loading.tsx, and more.
 Relations Handling: Efficient management of relations between server and child components.
-🔧 Prerequisites
-Ensure you have Node version 14.x installed.
 
-🚀 Getting Started
+### 🔧 Prerequisites
+Ensure you have **Node version 14.x** installed.
+
+### 🚀 Getting Started
 1. Clone the repository
-bash
-Copy code
+```shell
 git clone https://github.com/YourUsername/airbnb-clone.git
-2. Install dependencies
+```
+3. Install dependencies
 Navigate to the project directory:
-
-bash
-Copy code
+```shell
 cd airbnb-clone
+```
 Then install the necessary packages:
-
-bash
-Copy code
+```shell
 npm install
+```
 3. Setup environment variables
 Create a .env file in the root directory and add the following:
 
-env
-Copy code
+```js
 DATABASE_URL=YOUR_MONGODB_CONNECTION_STRING
 GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID
 GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET
@@ -55,28 +50,30 @@ GITHUB_ID=YOUR_GITHUB_ID
 GITHUB_SECRET=YOUR_GITHUB_SECRET
 NEXTAUTH_SECRET=RANDOM_STRING_SECRET
 CLOUDINARY_URL=YOUR_CLOUDINARY_URL
+```
 Replace placeholders (YOUR_MONGODB_CONNECTION_STRING, etc.) with actual values.
 
 4. Initialize Prisma
 Set up your database schema:
-
-bash
-Copy code
+```shell
 npx prisma db push
+```
 5. Run the application
 Start the development server:
-
-bash
-Copy code
+```shell
 npm run dev
+````
 📜 Available Commands
 For convenience, here are some of the primary npm scripts you can run:
 
-Command	Description
-dev	Starts the application in development mode
-build	Builds the application for production
-start	Starts the production server
-...	...(any other scripts you have in package.json)
+|  Command	      |Description                                |
+| :-------------- | :---------------------------------------- |
+|  dev	          |Starts the application in development mode |
+| :-------------- | :---------------------------------------- |
+|  build          |Builds the application for production      |
+| :-------------- | :---------------------------------------- |
+|  start          |Starts the production server               |
+
 🤝 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
