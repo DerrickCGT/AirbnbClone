@@ -75,64 +75,51 @@ For convenience, here are some of the primary npm scripts you can run:
 ### Server-Side Components:
 These components primarily deal with direct database interactions, API route handling, authentication, and other backend operations.
 
-1. Database Models:
+#### 1. Database Models:
 - User
 - Account
 - Listing
 - Reservation
--  =API Routes:
+#### 2. API Routes:
+- User registration, login, and social auth
+- Listings (creation, retrieval, favorites functionality)
+- Reservations (creation, deletion, retrieval)
+#### 3. Actions/Helpers:
+- getCurrentUser: Fetches the authenticated user's details.
+- getListingById: Fetches a specific listing by its ID.
+- getReservations: Retrieves reservations (for both the host and the guest perspective).
+- Database connection setup (prismadb.ts).
 
-User registration, login, and social auth
-Listings (creation, retrieval, favorites functionality)
-Reservations (creation, deletion, retrieval)
-Actions/Helpers:
-
-getCurrentUser: Fetches the authenticated user's details.
-getListingById: Fetches a specific listing by its ID.
-getReservations: Retrieves reservations (for both the host and the guest perspective).
-Database connection setup (prismadb.ts).
-Client-Side Components:
+### Client-Side Components:
 These components handle the user interface, user experience, and direct interaction with server-side components through API calls.
 
-Core UI Components:
+#### 1. Core UI Components:
+- Navbar (and its children, e.g., user menu, search bar)
+- Modal: A reusable modal component for different purposes, like registration.
+- ListingCard: Display for individual listings.
+- HeartButton: Allows users to favorite a listing.
+#### 2. Pages and Associated UI:
+- Home/Listing overview (index.tsx or similar)
+- Individual listing view (ListingClient).
+- User's reserved listings (TripsClient).
+- Host's view of their property reservations (ReservationClient).
+#### 3. Hooks and State Management:
+- useRegisterModal, useLoginModal: Zustand stores for managing modals.
+- useFavorite: Hook for the favorite functionality.
+- Others (like useCountries for location selection).
+#### 4. Miscellaneous UI Components:
+- Date range picker (calendar)
+- Input components (Input.tsx, ImageUpload, Counter...)
+- Country selector, map components, category boxes, etc.
 
-Navbar (and its children, e.g., user menu, search bar)
-Modal: A reusable modal component for different purposes, like registration.
-ListingCard: Display for individual listings.
-HeartButton: Allows users to favorite a listing.
-Pages and Associated UI:
+### Others:
+#### 1. Authentication:
+- Using next-auth for both regular and social logins.
+#### 2. External Services:
+- Cloudinary: For image hosting.
+- Next-auth providers (like Google and GitHub) for social logins.
 
-Home/Listing overview (index.tsx or similar)
-Individual listing view (ListingClient).
-User's reserved listings (TripsClient).
-Host's view of their property reservations (ReservationClient).
-Hooks and State Management:
-
-useRegisterModal, useLoginModal: Zustand stores for managing modals.
-useFavorite: Hook for the favorite functionality.
-Others (like useCountries for location selection).
-Miscellaneous UI Components:
-
-Date range picker (calendar)
-Input components (Input.tsx)
-Country selector, map components, category boxes, etc.
-Others:
-Authentication:
-
-Using next-auth for both regular and social logins.
-External Services:
-
-Cloudinary: For image hosting.
-Next-auth providers (like Google and GitHub) for social logins.
-Libraries & Frameworks:
-
-axios for HTTP requests.
-react-hot-toast for user notifications.
-react-date-range for the calendar component.
-prisma: ORM for interacting with the database.
-next-cloudinary: For image handling.
-leaflet and react-leaflet for map functionality.
-📖 Libraries & Frameworks:
+### 📖 Libraries & Frameworks:
 - axios for HTTP requests.
 - react-hot-toast for user notifications.
 - react-date-range for the calendar component.
