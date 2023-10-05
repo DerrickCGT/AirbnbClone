@@ -155,3 +155,12 @@ Day 15: Update favoriteListings and PropertyListings
 	update action/getListings.ts to pass in userId to fetch listings hosted by users, 
 	then update app/page.tsx to pass in searchParams object to ensure the getListing update work properly
 	create app/listings/[listingId]/route.ts for DELETE listings from user hosted listings under prismadb listing where userId = currentUser.Id
+
+Day 16: Implement Search functionality
+	create /modals/SearchModal.tsx (similar to rentModal) with enum STEPS to prompt user for search filter parameters
+	update layout.tsx to include SearchModal into the body
+	create useSearchModal.ts as hook to open and close SearchModal 
+	update navbar/Search.tsx for button functionality to open SearchModal for listing filters
+	update action/getListings.ts to include query parameters for all assigned filters (initially it get all listings and later updated for fetch listings hosted by users)
+	Filters include Location (map), dateRange (calendar) and parameters(guestCount, roomCount, bathroomCount)
+	
