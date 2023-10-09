@@ -1,16 +1,18 @@
 import getCurrentUser from "@/app/actions/getCurrentUsers";
-import getListings, { IListingsParams } from "@/app/actions/getListings";
+// import getListings, { IListingsParams } from "@/app/actions/getListings";
 import Container from "@/app/components/Container";
 import EmptyState from "@/app/components/EmptyState";
 import ListingCard from "@/app/components/listings/ListingCard";
 import ClientOnly from "./components/ClientOnly";
+import getListingsStatic from "./actions/getListingsStatic";
 
-interface HomeProps {
-  searchParams: IListingsParams
-}
+// interface HomeProps {
+//   searchParams: IListingsParams
+// }
 
-const Home = async ({ searchParams }: HomeProps) =>  {
-  const listings = await getListings(searchParams);
+// const Home = async ({ searchParams }: HomeProps) =>  {
+export default async function Home() {
+  const listings = await getListingsStatic();
   const currentUser = await getCurrentUser();
 
   if (listings.length === 0) {
@@ -36,15 +38,13 @@ const Home = async ({ searchParams }: HomeProps) =>  {
           gap-8
         "      
         >
-          {listings.map((listing: any) => {
-            return (
-              <ListingCard
-                currentUser={currentUser}
-                key={listing.id}
-                data={listing}
-              />
-            )
-          })}
+          {listings.map((listing: any) => (            
+            <ListingCard
+              currentUser={currentUser}
+              key={listing.id}
+              data={listing}
+            />            
+          ))}
 
         </div>
       </Container>
@@ -52,4 +52,4 @@ const Home = async ({ searchParams }: HomeProps) =>  {
   )
 }
 
-export default Home;
+// export default Home;
