@@ -1,5 +1,5 @@
 # Full Stack Airbnb Clone with Next.js 13
-## React, Tailwind, Prisma, MongoDB, NextAuth
+## React, Tailwind CSS, Prisma, MongoDB, NextAuth
 
 This repository houses a comprehensive clone of Airbnb built with Next.js, showcasing advanced features such as authentication, property management, and advanced search functionalities.
 
