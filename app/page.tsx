@@ -9,6 +9,7 @@ interface HomeProps {
   searchParams: IListingsParams
 }
 
+// check out https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
 export const dynamic = 'force-dynamic'
 
 const Home = async ({ searchParams }: HomeProps) =>  {
